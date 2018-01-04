@@ -1,4 +1,4 @@
-<h5 class="col-xs-12 btn btn-default btn-block hidden-lg hidden-md" ><a href="#home">{{title}}</a></h5>
+<h5 class="col-xs-12 btn btn-default btn-block hidden-lg hidden-md"  (click)="onSelectTab($event)">Tab 1{{title}}</h5>
     <div [hidden]="!active" class="pane">
       <ng-content></ng-content>
     </div>

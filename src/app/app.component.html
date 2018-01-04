@@ -1,14 +1,13 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
-  <h1>
-    Welcome to  Tab {{ title }}!
+  <h1>Welcome to Tab {{ title }}!
   </h1>
 </div>
 
 <tabs>
     <tab [tabTitle]="'Tab 1'" >
       <img src="assets/img.png" width="100" height="100"  class="img" alt="image title" />
-      <p>{{imgTitle}}</p>
+      <div class="image-cap">{{imgTitle}}</div>
     </tab>
     <tab tabTitle="Tab 2" class="col-xs-12">
       <div class="txt col-xs-12">{{dummyTxt}}
@@ -36,19 +35,3 @@
        </div>
      </tab>
 </tabs>
-
-<!-- <ul class="nav nav-tabs responsive " id="myTab">
-  <li class="active hidden-sm hidden-xs"  ><a href="#home">Home</a></li>
-  <li class="hidden-sm hidden-xs"><a href="#profile">Profile</a></li>
-  <li class="hidden-sm hidden-xs"><a href="#messages">Messages</a></li>
-</ul>
-
-<div class="tab-content responsive">
-<h5 class="col-xs-12 btn btn-default btn-block hidden-lg hidden-md" ><a href="#home">Home</a></h5>
- <div class="tab-pane " id="home">..sdsd.content...</div>
- <h5 class="col-xs-12 btn btn-default  btn-block hidden-lg hidden-md" ><a href="#home">Profile</a></h5>
-  <div class="tab-pane active" id="profile">...ndknalkndld content...</div>
-  <h5 class="col-xs-12 btn btn-default  btn-block hidden-lg hidden-md" ><a href="#home">Messages</a></h5>
-  <div class="tab-pane" id="messages">..ndkl kdkldkndklnd jd;n.content...</div>
-</div> -->
-

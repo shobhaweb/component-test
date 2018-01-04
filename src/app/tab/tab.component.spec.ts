@@ -5,6 +5,7 @@ import { TabComponent } from './tab.component';
 describe('TabComponent', () => {
   let component: TabComponent;
   let fixture: ComponentFixture<TabComponent>;
+  
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
@@ -22,4 +23,18 @@ describe('TabComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+  it('should have as tab 1 content', async(() => {
+   fixture = TestBed.createComponent(TabComponent);
+    fixture.detectChanges();
+    const compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('.img.src') === null).toBe(true);
+  }));
+  it(`should have as tab 1 title`, async(() => {
+    fixture = TestBed.createComponent(TabComponent);
+    fixture.detectChanges();
+    const compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('h5').textContent).toContain('Tab 1');
+  }));
+
+
 });
